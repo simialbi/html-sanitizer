@@ -87,25 +87,25 @@ export default class HtmlSanitizer {
         if (options.allowedTags) {
             this.TAG_WHITELIST = {};
             for (i in options.allowedTags) {
-                this.TAG_WHITELIST[options.allowedTags[i]] = true;
+                this.TAG_WHITELIST[options.allowedTags[i].toUpperCase()] = true;
             }
         }
         if (options.allowedAttributes) {
             this.ATTRIBUTE_WHITELIST = {};
             for (i in options.allowedAttributes) {
-                this.ATTRIBUTE_WHITELIST[options.allowedAttributes[i]] = true;
+                this.ATTRIBUTE_WHITELIST[options.allowedAttributes[i].toLowerCase()] = true;
             }
         }
         if (options.allowedCssStyles) {
             this.CSS_WHITELIST = {};
             for (i in options.allowedCssStyles) {
-                this.CSS_WHITELIST[options.allowedCssStyles[i]] = true;
+                this.CSS_WHITELIST[options.allowedCssStyles[i].toLowerCase()] = true;
             }
         }
         if (options.allowedSchemas) {
             this.SCHEMA_WHITELIST = [];
             for (i in options.allowedSchemas) {
-                this.SCHEMA_WHITELIST.push(options.allowedSchemas[i]);
+                this.SCHEMA_WHITELIST.push(options.allowedSchemas[i].toLowerCase());
             }
         }
         this.parser = new DOMParser();
