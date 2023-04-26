@@ -145,7 +145,7 @@ export default class HtmlSanitizer {
         let resultElement = this.makeSanitizeCopy(this.doc.body, extraSelector)
 
         return resultElement.innerHTML
-            .replace(/<br[^>]*>/g, "<br>\n$1")
+            .replace(/<br[^>]*>(\S)/g, "<br>\n$1")
             .replace(/div><div/g, "div>\n<div"); //replace is just for cleaner code
     }
 
