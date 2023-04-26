@@ -1,0 +1,31 @@
+{
+    "name": "html-sanitizer",
+    "description": "Client-side (browser-based) HTML sanitizer for front end (Module version of Alex Yumashev's code)",
+    "version": "0.1.0",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/simialbi/html-sanitizer.git"
+    },
+    "keywords": [
+        "html",
+        "sanitize",
+        "sanitizer",
+        "es6",
+        "module"
+    ],
+    "type": "module",
+    "main": "src/HtmlSanitizer.js",
+    "author": {
+        "name": "Simon Karlen",
+        "email": "simi.albi@outlook.com",
+        "url": "https://github.com/simialbi"
+    },
+    "contributors": [
+        {
+            "name": "Alex Yumashev",
+            "email": "jitbit@jitbit.com",
+            "url": "https://www.jitbit.com/alexblog/about"
+        }
+    ]
+}
